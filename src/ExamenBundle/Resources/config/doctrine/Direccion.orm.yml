@@ -1,0 +1,23 @@
+ExamenBundle\Entity\Direccion:
+    type: entity
+    table: null
+    repositoryClass: ExamenBundle\Repository\DireccionRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        calle:
+            type: string
+            length: '30'
+        colonia:
+            type: string
+            length: '30'
+        delegacion:
+            type: string
+            length: '30'
+        numero:
+            type: integer
+    lifecycleCallbacks: {  }

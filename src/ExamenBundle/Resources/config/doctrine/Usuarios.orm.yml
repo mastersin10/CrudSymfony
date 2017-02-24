@@ -1,0 +1,31 @@
+ExamenBundle\Entity\Usuarios:
+    type: entity
+    table: null
+    repositoryClass: ExamenBundle\Repository\UsuariosRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nombre:
+            type: string
+            length: '20'
+        apePaterno:
+            type: string
+            length: '20'
+            column: ape_paterno
+        apeMaterno:
+            type: string
+            length: '20'
+            column: ape_materno
+        edad:
+            type: 
+    manyToOne:
+        direccion:
+            targetEntity: ExamenBundle\Entity\Direccion
+            joinColumn:
+                name: direccion
+                referencedColumnName: id
+    lifecycleCallbacks: {  }

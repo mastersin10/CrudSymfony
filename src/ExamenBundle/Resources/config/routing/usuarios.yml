@@ -1,0 +1,24 @@
+usuarios_index:
+    path:     /
+    defaults: { _controller: "ExamenBundle:Usuarios:index" }
+    methods:  GET
+
+usuarios_show:
+    path:     /{id}/show
+    defaults: { _controller: "ExamenBundle:Usuarios:show" }
+    methods:  GET
+
+usuarios_new:
+    path:     /new
+    defaults: { _controller: "ExamenBundle:Usuarios:new" }
+    methods:  [GET, POST]
+
+usuarios_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "ExamenBundle:Usuarios:edit" }
+    methods:  [GET, POST]
+
+usuarios_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "ExamenBundle:Usuarios:delete" }
+    methods:  DELETE

@@ -1,0 +1,11 @@
+examen_usuarios:
+    resource: "@ExamenBundle/Resources/config/routing/usuarios.yml"
+    prefix:   /usuarios
+
+examen_direccion:
+    resource: "@ExamenBundle/Resources/config/routing/direccion.yml"
+    prefix:   /direccion
+
+examen_homepage:
+    path:     /
+    defaults: { _controller: ExamenBundle:Default:index }

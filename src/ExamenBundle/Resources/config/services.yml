@@ -1,0 +1,4 @@
+services:
+#    examen.example:
+#        class: ExamenBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
